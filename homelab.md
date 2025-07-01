@@ -87,4 +87,4 @@ Current VMs:
 
 ---
 
-![18UU Rack Setup](./assets/rack_1.jpg "Rack Image")
+![18UU Rack Setup](./assets/rack.jpg "Rack Image")
