@@ -1,14 +1,10 @@
 # Workspace
 
-This is the hub for my homelab, projects and documentation. 
+This is the hub for my homelab, projects, and documentation. HTML is built with Sphinx and the [Piccolo theme](https://github.com/piccolo-orm/piccolo_theme).
 
 ##  Links
 
-- [Homelab](homelab.md) – My self-hosted server setup, automation tools, and network infrastructure.
+- [Homelab](docs/homelab.rst) – My self-hosted server setup.
 
 --- 
-
-> ⚙️ **More sections are coming... Stay tuned.**
-
----
 
