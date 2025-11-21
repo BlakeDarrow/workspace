@@ -141,121 +141,106 @@
             
   <section id="homelab">
 <h1>Homelab<a class="headerlink" href="#homelab" title="Link to this heading">¶</a></h1>
-<p>Updated 07/01/2025</p>
-<p>I started my homelab about 1.5 years ago with a Raspberry Pi 5 running Ubuntu and 2 external 5TB drives. From there I bought an 8U StarTech rack and Dream Machine Pro. The 8U rack was quickly filled and about a year later I upgraded to an 18U rack which is currently what I’m running with.</p>
-<section id="equipment">
-<h2>Equipment<a class="headerlink" href="#equipment" title="Link to this heading">¶</a></h2>
+<p><em>Last updated: November 21, 2025</em></p>
+<p>I started my homelab about 2 years ago with a Raspberry Pi 5 running Ubuntu and 2 external 5TB drives. From there I bought an 8U StarTech rack and Dream Machine Pro. The 8U rack was quickly filled and about a year later I upgraded to an 18U rack which is currently what I’m running with.</p>
+<p><strong>Quick Links:</strong> <a class="reference external" href="https://docs.google.com/spreadsheets/d/1-5ZaVzM2TA5GnljXQbx04h1sIoWHmQHqI64W5m31yuI/edit?usp=sharing">PDU Toggle Switch Layout</a></p>
+<hr class="docutils" />
+<section id="hardware-overview">
+<h2>Hardware Overview<a class="headerlink" href="#hardware-overview" title="Link to this heading">¶</a></h2>
+<p><strong>Infrastructure</strong></p>
 <ul class="simple">
-<li><p>18U StarTech server rack (<a class="reference external" href="https://a.co/d/7RQkPYP">Amazon</a>)</p></li>
-<li><p><a class="reference internal" href="#u-ubiquity-dream-machine-pro">1U Ubiquity Dream Machine Pro</a> (<a class="reference external" href="https://store.ui.com/us/en/products/udm-pro">UniFi</a>)</p></li>
-<li><p>1U ADJ 8 Outlet Toggle Switch PDU (<a class="reference external" href="https://a.co/d/dcRt736">Amazon</a>)</p></li>
-<li><p>1U 8 Outlet StarTech PDU (<a class="reference external" href="https://a.co/d/hr3ytrX">Amazon</a>)</p></li>
-<li><p><a class="reference internal" href="#u-silverstone-rm44-chassis">4U Silverstone RM44 Chassis</a> (<a class="reference external" href="https://a.co/d/aNcRnCz">Amazon</a>)</p></li>
-<li><p><a class="reference internal" href="#u-dell-poweredge-r730xd">2U Dell PowerEdge R730XD</a> (<a class="reference external" href="https://newserverlife.com/configure/dell_poweredge_r730xd_12lff_2sff/">New Server Life</a>)</p></li>
-<li><p><a class="reference internal" href="#u-supermicro-sys-6016t-ntf">1U Supermicro SYS-6016T-NTF</a> (<a class="reference external" href="https://www.newegg.com/supermicro-sys-6016t-ntrf-supports-up-to-two-intel-64-bit-xeon-processor-of-the-same-type-below-in/p/N82E16816101261">Newegg</a>)</p></li>
-<li><p>2U CyberPower PSU (<a class="reference external" href="https://a.co/d/4aGn8KZ">Amazon</a>)</p></li>
+<li><p>18U StarTech Server Rack (<a class="reference external" href="https://a.co/d/7RQkPYP">Amazon</a>)</p></li>
+<li><p>ADJ 8 Outlet Toggle Switch PDU (<a class="reference external" href="https://a.co/d/dcRt736">Amazon</a>)</p></li>
+<li><p>8 Outlet StarTech PDU (<a class="reference external" href="https://a.co/d/hr3ytrX">Amazon</a>)</p></li>
+<li><p>CyberPower UPS (<a class="reference external" href="https://a.co/d/4aGn8KZ">Amazon</a>)</p></li>
+</ul>
+<p><strong>Network</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#ubiquiti-dream-machine-pro">Ubiquiti Dream Machine Pro</a> (<a class="reference external" href="https://store.ui.com/us/en/products/udm-pro">UniFi</a>)</p></li>
+</ul>
+<p><strong>Compute</strong></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#dell-poweredge-r730xd">Dell PowerEdge R730XD</a> - TrueNAS server</p></li>
+<li><p><a class="reference internal" href="#supermicro-sys-6016t-ntf">Supermicro SYS-6016T-NTF</a> - Proxmox VM host</p></li>
+<li><p><a class="reference internal" href="#silverstone-rm44-chassis">Silverstone RM44 Chassis</a> - Gaming PC/Daily driver</p></li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="u-ubiquity-dream-machine-pro">
-<h2>1U Ubiquity Dream Machine Pro<a class="headerlink" href="#u-ubiquity-dream-machine-pro" title="Link to this heading">¶</a></h2>
-<p>Entrypoint into my network. I have Teleport setup so I can access my network from anywhere. DNS server, adblocker, region blocking, firewall, network analytics, and future NVR for cameras.</p>
+<section id="ubiquiti-dream-machine-pro">
+<h2>Ubiquiti Dream Machine Pro<a class="headerlink" href="#ubiquiti-dream-machine-pro" title="Link to this heading">¶</a></h2>
+<p>Network gateway with Teleport for remote access. Handles DNS, ad-blocking, region filtering, firewall, and network analytics. Planning to add NVR for security cameras.</p>
 </section>
-<hr class="docutils" />
-<section id="u-silverstone-rm44-chassis">
-<h2>4U Silverstone RM44 Chassis<a class="headerlink" href="#u-silverstone-rm44-chassis" title="Link to this heading">¶</a></h2>
-<p>Gaming PC with Windows 11 as my daily driver.</p>
-<p>Specs:</p>
+<section id="silverstone-rm44-chassis">
+<h2>Silverstone RM44 Chassis<a class="headerlink" href="#silverstone-rm44-chassis" title="Link to this heading">¶</a></h2>
+<p><strong>Windows 11 Gaming PC &amp; Daily Driver</strong></p>
+<div class="admonition-components admonition">
+<p class="admonition-title">Components</p>
 <ul class="simple">
-<li><p>Ryzen 7 5800X</p></li>
-<li><p>RTX 3080Ti</p></li>
+<li><p>AMD Ryzen 7 5800X</p></li>
+<li><p>NVIDIA RTX 3080Ti</p></li>
 <li><p>128GB DDR4</p></li>
 </ul>
+</div>
 </section>
-<hr class="docutils" />
-<section id="u-dell-poweredge-r730xd">
-<h2>2U Dell PowerEdge R730XD<a class="headerlink" href="#u-dell-poweredge-r730xd" title="Link to this heading">¶</a></h2>
-<p>My most recent addition that has already turned into my work horse running <a class="reference external" href="https://www.truenas.com/">TrueNAS</a>.</p>
-<p>Specs:</p>
+<section id="dell-poweredge-r730xd">
+<h2>Dell PowerEdge R730XD<a class="headerlink" href="#dell-poweredge-r730xd" title="Link to this heading">¶</a></h2>
+<p><strong>Primary TrueNAS Server</strong></p>
+<p>My workhorse running TrueNAS for storage and Docker app deployment.</p>
+<div class="admonition-components admonition">
+<p class="admonition-title">Components</p>
 <ul class="simple">
-<li><p>2x Xeon E5-2660 v4 &#64; 2.00GHz (56 total cores)</p></li>
-<li><p>128GB DDR4 (ECC)</p></li>
-<li><p>32TB Usable (RaidZ2)</p></li>
+<li><p>2x Xeon E5-2660 v4 &#64; 2.00GHz (56 cores total)</p></li>
+<li><p>128GB DDR4 ECC</p></li>
+<li><p>32TB usable (RaidZ2)</p></li>
 </ul>
-<p>Current Docker Apps:</p>
-<ul>
-<li><p><a class="reference external" href="https://nginxproxymanager.com/">Nginx Proxy Manager</a></p>
-<p>Local reverse proxy to route all traffic to proper destinations. Combined with my Dream Machine Pro, its super easy for me to add local subdomains that point to a local IP and port.</p>
-</li>
-<li><p><a class="reference external" href="https://www.jenkins.io/">Jenkins</a></p>
-<p>Just started getting into this as my automation for app builds. Replacing my old VM method on my Supermicro Proxmox. I have a LOT of different projects in Rust/Python that have multiple target releases. MacOS, Windows, Debian/Fedora…</p>
-</li>
-<li><p><a class="reference external" href="https://butlerx.github.io/wetty/#/">WeTTY</a></p>
-<p>Web terminal in a stripped down clean environment for a universal NeoVim setup. Has access to my project files for remote programming wherever I am with whatever hardware I’m on. Simple startup.sh script that rebuild the clean environment on container restarts.</p>
-</li>
-<li><p><a class="reference external" href="https://linkding.link/">Linkding</a></p>
-<p>Fantastic bookmark service. Allows me to easily sort and search my ever growing list of bookmarks. It is also super customizable via CSS.</p>
-</li>
-<li><p><a class="reference external" href="https://www.plex.tv/">Plex</a></p>
-<p>Local “streaming service” of my local media. Currently I don’t have a GPU in this machine, but CPU is handling the traffic just fine for 1080p.</p>
-</li>
-<li><p><a class="reference external" href="https://www.makemkv.com/">MakeMKV</a></p>
-<p>Web interface of MakeMKV for ripping local media such as DVDs. Took a while to land on a solution that I could use with this machine and am happing with this <a class="reference external" href="https://github.com/jlesage/docker-makemkv">image</a>.</p>
-</li>
-<li><p><a class="reference external" href="https://filebrowser.org/">FileBrowser</a></p>
-<p>Easy web interface for multi-user dropbox style file storage. Create a TrueNAS user, send them a Teleport link and the local address - BOOM, easy!</p>
-</li>
-<li><p><a class="reference external" href="https://github.com/tigerblue77/Dell_iDRAC_fan_controller_Docker">Dell Fan Controller</a></p>
-<p>The R730XD does not play well with my non Dell NIC, so this allows me to customize the fan speed / desired temp. Without this running the machine absolutely RIPS and is way to loud for being near my desk.</p>
-</li>
+</div>
+<details>
+   <summary>Docker Apps</summary><p><strong>Deployed</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://excalidraw.com/">Excalidraw</a> - Whiteboard for brainstorming</p></li>
+<li><p><a class="reference external" href="https://butlerx.github.io/wetty/#/">WeTTY</a> - Web-based terminal with NeoVim for remote development</p></li>
+<li><p><a class="reference external" href="https://linkding.link/">Linkding</a> - Bookmark manager with custom CSS support</p></li>
+<li><p><a class="reference external" href="https://filebrowser.org/">FileBrowser</a> - Multi-user web-based file storage</p></li>
+<li><p><a class="reference external" href="https://ollama.com/">Ollama</a> - Local LLM hosting</p></li>
+<li><p><a class="reference external" href="https://openwebui.com/">Open WebUI</a> - Interface for Ollama models</p></li>
+<li><p><a class="reference external" href="https://client.meshtastic.org/">Meshtastic</a> - Meshtastic device client</p></li>
+<li><p><a class="reference external" href="https://www.plex.tv/">Plex</a> - Local media streaming</p></li>
+<li><p><a class="reference external" href="https://www.makemkv.com/">MakeMKV</a> - Media ripping (<a class="reference external" href="https://github.com/jlesage/docker-makemkv">docker image</a>)</p></li>
+<li><p><a class="reference external" href="https://nginxproxymanager.com/">Nginx Proxy Manager</a> - Reverse proxy for local subdomain routing</p></li>
+<li><p><a class="reference external" href="https://github.com/tigerblue77/Dell_iDRAC_fan_controller_Docker">Dell Fan Controller</a> - Custom fan curves for non-Dell hardware compatibility</p></li>
 </ul>
-<p>Future:</p>
-<ul>
-<li><p><a class="reference external" href="https://immich.app/">Immich</a></p>
-<p>I don’t feel 100% confident using this app yet, but when it gets closer to stable I absolutely will. This will further help me decouple from paying for another service. (Google Photos alternative)</p>
-</li>
+<p><strong>Planned Additions</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jenkins.io/">Jenkins</a> - Build automation for Rust/Python projects across multiple platforms (MacOS, Windows, Debian, Fedora)</p></li>
+<li><p><a class="reference external" href="https://immich.app/">Immich</a> - Google Photos alternative (waiting for stable release)</p></li>
 </ul>
-</section>
+</details></section>
+<section id="supermicro-sys-6016t-ntf">
+<h2>Supermicro SYS-6016T-NTF<a class="headerlink" href="#supermicro-sys-6016t-ntf" title="Link to this heading">¶</a></h2>
+<p><strong>Proxmox VM Host</strong></p>
+<p>Older 1U server running Proxmox for virtualization. Handles development VMs and services that don’t need to run 24/7.</p>
+<details>
+   <summary>️Virtual Machines</summary><ul class="simple">
+<li><p><strong>Ubuntu</strong> - General testing &amp; Debian-based app builds</p></li>
+<li><p><strong>Fedora</strong> - Non-Debian Linux builds</p></li>
+<li><p><strong>Windows 11</strong> - Multiplayer client testing for Rust game/editor</p></li>
+<li><p><strong>MacOS Sierra</strong> - Mac app builds</p></li>
+<li><p><strong>Ubuntu</strong> - Minecraft server</p></li>
+<li><p><strong>TrueNAS</strong> - Testing deployment</p></li>
+<li><p><strong>OpenMandriva</strong> - Experimentation</p></li>
+</ul>
+</details></section>
 <hr class="docutils" />
-<section id="u-supermicro-sys-6016t-ntf">
-<h2>1U Supermicro SYS-6016T-NTF<a class="headerlink" href="#u-supermicro-sys-6016t-ntf" title="Link to this heading">¶</a></h2>
-<p>My Supermicro 1U is getting pretty outdated so I use it for a Proxmox setup with VMs of things that I don’t need to run all the time, or im okay with running “slow”. A lot of its main use was as a build machine for projects, but as im migrating to Jenkins, this might just get used as my local AI machine.</p>
-<p>Current VMs:</p>
-<ul>
-<li><p><a class="reference external" href="https://ubuntu.com/">Ubuntu</a></p>
-<p>Mainly for playing around but also acts as a build machine for Debian based apps.</p>
-</li>
-<li><p><a class="reference external" href="https://www.microsoft.com/en-us/windows/windows-11?r=1">Windows 11</a></p>
-<p>For my Editor/Game im building in Rust this acts as a client so I can test multiplayer with.</p>
-</li>
-<li><p><a class="reference external" href="https://www.fedoraproject.org/">Fedora</a></p>
-<p>For building apps on non Debian linux.</p>
-</li>
-<li><p><a class="reference external" href="https://ubuntu.com/">Ubuntu</a></p>
-<p>Minecraft server.</p>
-</li>
-<li><p><a class="reference external" href="https://www.openmandriva.org/">OpenMandriva</a></p>
-<p>Playing around.</p>
-</li>
-<li><p><a class="reference external" href="https://ubuntu.com/">Ubuntu</a></p>
-<p>Ollama and Open WebUI for local AI.</p>
-</li>
-<li><p><a class="reference external" href="https://www.truenas.com/">TrueNAS</a></p>
-<p>TrueNAS deployment for testing purposes.</p>
-</li>
-<li><p><a class="reference external" href="https://apps.apple.com/us/app/macos-sierra/id1127487414?mt=12">MacOS Sierra</a></p>
-<p>Building apps for Mac.</p>
-</li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="images">
-<h2>Images<a class="headerlink" href="#images" title="Link to this heading">¶</a></h2>
-<p>Current 18U setup</p>
-<img alt="Current 18U Rack Setup" class="align-center" src="_images/rack.jpg" />
-<p>Old 8U setup before I had my 2U R730XD.</p>
-<img alt="Old 8U Rack Setup" class="align-center" src="_images/rack_old.jpg" />
-</section>
+<section id="media">
+<h2>Media<a class="headerlink" href="#media" title="Link to this heading">¶</a></h2>
+<details>
+   <summary>Rack Photos</summary><p><strong>Current 18U Setup</strong></p>
+<a class="reference internal image-reference" href="_images/rack.jpg"><img alt="Current 18U Rack Setup" class="align-center" src="_images/rack.jpg" style="width: 80%;" />
+</a>
+<p><strong>Original 8U Setup</strong></p>
+<a class="reference internal image-reference" href="_images/rack_old.jpg"><img alt="Old 8U Rack Setup" class="align-center" src="_images/rack_old.jpg" style="width: 80%;" />
+</a>
+</details></section>
 </section>
 
 
@@ -273,12 +258,12 @@
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">Homelab</a><ul>
-<li><a class="reference internal" href="#equipment">Equipment</a></li>
-<li><a class="reference internal" href="#u-ubiquity-dream-machine-pro">1U Ubiquity Dream Machine Pro</a></li>
-<li><a class="reference internal" href="#u-silverstone-rm44-chassis">4U Silverstone RM44 Chassis</a></li>
-<li><a class="reference internal" href="#u-dell-poweredge-r730xd">2U Dell PowerEdge R730XD</a></li>
-<li><a class="reference internal" href="#u-supermicro-sys-6016t-ntf">1U Supermicro SYS-6016T-NTF</a></li>
-<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#hardware-overview">Hardware Overview</a></li>
+<li><a class="reference internal" href="#ubiquiti-dream-machine-pro">Ubiquiti Dream Machine Pro</a></li>
+<li><a class="reference internal" href="#silverstone-rm44-chassis">Silverstone RM44 Chassis</a></li>
+<li><a class="reference internal" href="#dell-poweredge-r730xd">Dell PowerEdge R730XD</a></li>
+<li><a class="reference internal" href="#supermicro-sys-6016t-ntf">Supermicro SYS-6016T-NTF</a></li>
+<li><a class="reference internal" href="#media">Media</a></li>
 </ul>
 </li>
 </ul>
