@@ -2,11 +2,17 @@
 Homelab
 ========
 
-*Last updated: November 21, 2025*
+*Last updated: February 18, 2025*
 
-I started my homelab about 2 years ago with a Raspberry Pi 5 running Ubuntu and 2 external 5TB drives. From there I bought an 8U StarTech rack and Dream Machine Pro. The 8U rack was quickly filled and about a year later I upgraded to an 18U rack which is currently what I'm running with.
+I started my homelab over 2 years ago with a Raspberry Pi 5 running Ubuntu and 2 external 5TB drives. From there I bought an 8U StarTech rack and Dream Machine Pro. The 8U rack was quickly filled and about a year later I upgraded to an 18U rack which is currently what I'm running with.
 
 **Quick Links:** `PDU Toggle Switch Layout <https://docs.google.com/spreadsheets/d/1-5ZaVzM2TA5GnljXQbx04h1sIoWHmQHqI64W5m31yuI/edit?usp=sharing>`_
+
+.. image:: ./static/diagram.png
+   :alt: Diagram
+   :align: center
+   :width: 100%
+
 
 ----
 
@@ -28,7 +34,7 @@ Hardware Overview
 
 - `Dell PowerEdge R730XD`_ - TrueNAS server
 - `Supermicro SYS-6016T-NTF`_ - Proxmox VM host
-- `Silverstone RM44 Chassis`_ - Gaming PC/Daily driver
+- `Silverstone RM44 Chassis`_ - Gaming/Dev machine
 
 ----
 
@@ -36,13 +42,13 @@ Hardware Overview
 Ubiquiti Dream Machine Pro
 ===============================
 
-Network gateway with Teleport for remote access. Handles DNS, ad-blocking, region filtering, firewall, and network analytics. Planning to add NVR for security cameras.
+Network gateway with Teleport for remote access. Handles DNS, ad-blocking, region filtering, firewall, network analytics, and camera recording/storage.
 
 
 Silverstone RM44 Chassis
 =============================
 
-**Windows 11 Gaming PC & Daily Driver**
+**Windows 11 and Pop!_OS Gaming/Dev Machine**
 
 .. admonition:: Components
 
@@ -131,6 +137,14 @@ Media
 
 .. image:: ./static/rack.jpg
    :alt: Current 18U Rack Setup
+   :align: center
+   :width: 80%
+
+
+**Laid out in RackViz**
+
+.. image:: ./static/digital.png
+   :alt: Current Digital 18U Rack Setup
    :align: center
    :width: 80%
 
